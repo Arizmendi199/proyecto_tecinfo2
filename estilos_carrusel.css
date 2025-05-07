@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carrusel {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes {
+    display: flex;
+    animation: deslizar 8s infinite linear;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes deslizar {
+    0%, 100% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+}
